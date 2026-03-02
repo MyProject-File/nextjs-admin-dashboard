@@ -1,0 +1,36 @@
+rowId,recordId,dealName,dealOwner,dealStage,amount,dealProbability,weightedAmount,lastActivityDate,closeDate
+1,303265000000,Posti AI Chat,Mikko Valorinta (Deactivated User),Solution Presentation & Demo,1200,0.1,120,,9/30/2025
+2,303265000000,LRF,Nithin Nadagouda,Lead Qualification,12000,0.1,1200,,9/30/2025
+3,335782000000,Supercell,Nithin Nadagouda,Lead Qualification,100000,0.1,10000,,10/31/2025
+4,335784000000,OpenAI,Nithin Nadagouda,Appointment Scheduled,100000,0.2,20000,,10/31/2025
+5,335784000000,Visa,Nithin Nadagouda,Appointment Scheduled,100000,0.2,20000,,10/31/2025
+6,335163000000,Wolt ,Nithin Nadagouda,Proof of Concept / Trial,60000,0.6,36000,,10/31/2025
+7,335228000000,Fortum,Nithin Nadagouda,Discovery & Needs Assessment,100000,0.2,20000,,10/31/2025
+8,335164000000,Ioncor,Nithin Nadagouda,Presentation Scheduled,60000,0.6,36000,,10/31/2025
+9,335225000000,NN-Group,Nithin Nadagouda,Appointment Scheduled,60000,0.2,12000,,10/31/2025
+10,335163000000,Siemens,Nithin Nadagouda,Proposal and Pricing Negotiation,10000,0.7,7000,,10/31/2025
+11,335225000000,GEA Group,Nithin Nadagouda,Qualified To Buy,100000,0.4,40000,,10/31/2025
+12,335164000000,Jehovas Witness,Nithin Nadagouda,Appointment Scheduled,100000,0.2,20000,,10/31/2025
+13,334961000000,Nouryon,Nithin Nadagouda,Appointment Scheduled,60000,0.2,12000,,10/31/2025
+14,335163000000,BASF,Nithin Nadagouda,Appointment Scheduled,100000,0.2,20000,,10/31/2025
+15,144693000000,OP E-Sourcing,Nithin Nadagouda,Contract Signed - Onboarding,72000,0.9,64800,,11/30/2025
+16,237747000000,Essity Copenhagen,Nithin Nadagouda,Appointment Scheduled,100000,0.2,20000,12/9/2025,11/30/2025
+17,237747000000,Van Oord,Nithin Nadagouda,Appointment Scheduled,0,0.2,0,12/9/2025,11/30/2025
+18,335164000000,Finnish Media,Nithin Nadagouda,Closed Lost,100000,0,0,,12/19/2025
+19,374552000000,F-Secure ,Nithin Nadagouda,Contract Signed - Onboarding,9000,0.9,8100,,12/31/2025
+20,237747000000,NDA New Deal,Nithin Nadagouda,Appointment Scheduled,60000,0.2,12000,,12/31/2025
+21,237747000000,Novartis,Nithin Nadagouda,Appointment Scheduled,60000,0.2,12000,12/9/2025,12/31/2025
+22,238354000000,Nordea,Nithin Nadagouda,Appointment Scheduled,100000,0.2,20000,12/9/2025,12/31/2025
+23,238354000000,Hitachi Energy,Nithin Nadagouda,Appointment Scheduled,0,0.2,0,,12/31/2025
+24,238354000000,novonesis,Nithin Nadagouda,Appointment Scheduled,0,0.2,0,12/9/2025,12/31/2025
+25,238354000000,Boliden,Nithin Nadagouda,Appointment Scheduled,100000,0.2,20000,12/9/2025,12/31/2025
+26,237747000000,Velux,Nithin Nadagouda,Appointment Scheduled,60000,0.2,12000,12/9/2025,12/31/2025
+27,237747000000,Ingka,Nithin Nadagouda,Appointment Scheduled,0,0.2,0,12/9/2025,12/31/2025
+28,303265000000,Normet,Nithin Nadagouda,Solution Presentation & Demo,0,0.4,0,,12/31/2025
+29,303271000000,UPM AI Procurement,Nithin Nadagouda,Proof of Concept / Trial,0,0.6,0,9/10/2025,12/31/2025
+30,302906000000,Value Source,Nithin Nadagouda,Solution Presentation & Demo,20000,0.4,8000,,12/31/2025
+31,303266000000,This Partners,Mikko Valorinta (Deactivated User),Solution Presentation & Demo,20000,0.4,8000,,12/31/2025
+32,303271000000,S Square Advisors,Nithin Nadagouda,Discovery & Needs Assessment,20000,0.2,4000,,12/31/2025
+33,238354000000,Curium Pharma,Nithin Nadagouda,Appointment Scheduled,60000,0.2,12000,,12/31/2025
+34,237747000000,Ikea,Nithin Nadagouda,Appointment Scheduled,100000,0.2,20000,6/16/2025,12/31/2025
+35,374569000000,Mer AS,Nithin Nadagouda,Closed Won,1200,1,1200,12/9/2025,1/7/2026
