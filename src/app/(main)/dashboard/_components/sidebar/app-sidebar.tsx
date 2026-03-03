@@ -1,97 +1,55 @@
 "use client";
 
 import Link from "next/link";
-
-import { CircleHelp, ClipboardList, Command, Database, File, Search, Settings } from "lucide-react";
-import { useShallow } from "zustand/react/shallow";
+import { usePathname } from "next/navigation";
 
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
+  SidebarGroup,
+  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { APP_CONFIG } from "@/config/app-config";
-import { rootUser } from "@/data/users";
-import { sidebarItems } from "@/navigation/sidebar/sidebar-items";
-import { usePreferencesStore } from "@/stores/preferences/preferences-provider";
 
-import { NavMain } from "./nav-main";
-import { NavUser } from "./nav-user";
+export function AppSidebar() {
+  const pathname = usePathname();
 
-const _data = {
-  navSecondary: [
-    {
-      title: "Settings",
-      url: "#",
-      icon: Settings,
-    },
-    {
-      title: "Get Help",
-      url: "#",
-      icon: CircleHelp,
-    },
-    {
-      title: "Search",
-      url: "#",
-      icon: Search,
-    },
-  ],
-  documents: [
-    {
-      name: "Data Library",
-      url: "#",
-      icon: Database,
-    },
-    {
-      name: "Reports",
-      url: "#",
-      icon: ClipboardList,
-    },
-    {
-      name: "Word Assistant",
-      url: "#",
-      icon: File,
-    },
-  ],
-};
-
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
-  const { sidebarVariant, sidebarCollapsible, isSynced } = usePreferencesStore(
-    useShallow((s) => ({
-      sidebarVariant: s.sidebarVariant,
-      sidebarCollapsible: s.sidebarCollapsible,
-      isSynced: s.isSynced,
-    })),
-  );
-
-  const variant = isSynced ? sidebarVariant : props.variant;
-  const collapsible = isSynced ? sidebarCollapsible : props.collapsible;
+  const items = [
+    { label: "Slide 1 - Overview", href: "/dashboard/slide-1" },
+    { label: "Slide 2 - Weighted CV", href: "/dashboard/slide-2" },
+    { label: "Slide 3", href: "/dashboard/slide-3" },
+  ];
 
   return (
-    <Sidebar {...props} variant={variant} collapsible={collapsible}>
-      <SidebarHeader>
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild>
-              <Link prefetch={false} href="/dashboard/default">
-                <Command />
-                <span className="font-semibold text-base">{APP_CONFIG.name}</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
+    <Sidebar>
+      <SidebarHeader className="flex items-center justify-between gap-2">
+        <div className="text-sm font-bold">Dashboard</div>
+        <SidebarTrigger />
       </SidebarHeader>
+
       <SidebarContent>
-        <NavMain items={sidebarItems} />
-        {/* <NavDocuments items={data.documents} /> */}
-        {/* <NavSecondary items={data.navSecondary} className="mt-auto" /> */}
+        <SidebarGroup>
+          <SidebarGroupLabel>Slides</SidebarGroupLabel>
+
+          <SidebarMenu>
+            {items.map((it) => (
+              <SidebarMenuItem key={it.href}>
+                <SidebarMenuButton asChild data-active={pathname === it.href}>
+                  <Link href={it.href}>{it.label}</Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            ))}
+          </SidebarMenu>
+        </SidebarGroup>
       </SidebarContent>
+
       <SidebarFooter>
-        <NavUser user={rootUser} />
+        <div className="text-xs text-muted-foreground">Navigation</div>
       </SidebarFooter>
     </Sidebar>
   );
